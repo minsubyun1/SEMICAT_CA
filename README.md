@@ -1,5 +1,3 @@
-# SEMICAT_CA
-
 <h1>SEMICAT CODING STUDY</h1>
 
 <h2> Joshua와 Luis의 자기 개발을 위한 스터디 </h2>
