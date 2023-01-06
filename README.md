@@ -1,7 +1,7 @@
 <h1>SEMICAT CODING STUDY</h1>
 
   <h2> Purpose of Joshua </h2>
-    <li> HTML,CSS BASIC </li>
+    <li> HTML & CSS BASIC </li>
     <li> JavaScript </li>
     <li> Algorithm </li>
 
