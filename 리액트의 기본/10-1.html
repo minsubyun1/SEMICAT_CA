@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 리액트 사용 준비 -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div> 
+    
+    <script type="text/babel">
+        // 컴포넌트와 컨테이너 설정하기
+        const component = <h1>리액트 기본</h1> 
+        const container = document.getElementById('root') // 컨테이너는 컴포넌트를 출력할 상자(공간)이라고 생각하면 됨.
+
+        // 출력하기
+        ReactDOM.render(component, container)
+        // 이렇게 자바스크립트 코드 내부에 HTML 코드를 사용한 모습을 볼 수 있는데, 이러한 문법을 JSX(자바스크립트 확장 문법)이라고 한다.
+        // 웹 브라우저는 사실 이러한 코드를 읽고 실행하지 못한다. 바벨이 JSX 코드를 읽고 일반적인 자바스크립트 문법으로 변환한 뒤 실행해주므로 사용할 수 있는 것이다.
+    </script>
+</body>
+</html>

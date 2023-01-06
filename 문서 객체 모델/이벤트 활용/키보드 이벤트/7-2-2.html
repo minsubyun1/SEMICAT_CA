@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            const h1 = document.querySelector('h1')
+            const print = (event) => {
+                let output = ''
+                output += `alt: ${event.altKey}<br>` // 13라인~15번라인 모두 이벤트가 발생하면, 불 값을 반환한다.
+                output += `ctrl: ${event.ctrlKey}<br>`
+                output += `shift: ${event.shiftKey}<br>`
+                output += `code: ${typeof(event.code) !== 'undefined' ? //event.code가 있으면 event.code를 출력하고, undefined라면 event.KeyCode를 출력한다. 
+                    event.code : event.keyCode}`
+                h1.innerHTML = output
+            }
+
+            document.addEventListener('keydown', print) //키가 눌릴 때 출력
+            document.addEventListener('keyup',print) //키가 떨어질 때 출력
+        })
+    </script>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>
